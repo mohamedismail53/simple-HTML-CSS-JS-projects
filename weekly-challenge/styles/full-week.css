@@ -1,0 +1,59 @@
+h1 {
+    font-size: 48px;
+    color: rgb(111, 104, 104);
+}
+
+header p {
+    margin-top: 38px;
+}
+
+h2 {
+    color: rgb(78, 1, 1);
+    margin-bottom: 12px;
+    font-family: 'Oswald', sans-serif;
+    ;
+}
+
+li>p {
+    margin-top: 0;
+}
+
+a {
+    background-color: rgb(167, 1, 78);
+    color: white;
+    font-size: 24px;
+    border-radius: 8px;
+    padding: 10px 48px 10px 48px;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: rgb(174, 62, 115);
+}
+
+ol {
+    width: 500px;
+    margin: 38px auto 0 auto;
+    padding: 0;
+}
+
+li {
+    background-color: rgb(174, 62, 115);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    border-radius: 8px;
+    margin: 38px auto 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* #description {
+    margin-top: 38px;
+} */
+
+
+/* header>p {
+    margin-top: 38px;
+} */
