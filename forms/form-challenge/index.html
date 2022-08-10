@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <h1>
+        Contact Us
+    </h1>
+    <form action="/forms/form-challenge/" method="GET">
+        <section>
+            <h2>How can we help you?</h2>
+            <ul>
+                <li class="inline-form-control">
+                    <label for="user-name">Your Name</label>
+                    <input type="text" name="username" id="user-name" required>
+                </li>
+
+                <li class="inline-form-control">
+                    <label for="user-email">Your Email Address</label>
+                    <input type="email" name="useremail" id="user-email" required>
+                </li>
+
+                <li class="inline-form-control">
+                    <label for="user-phone">Your Phone Number</label>
+                    <input type="number" name="userphone" id="user-phone" required minlength="11">
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="inline-form-control">
+                <label for="user-message">Your Message</label>
+                <textarea name="usermessage" id="user-message" cols="30" rows="10"></textarea>
+            </div>
+        </section>
+
+        <section>
+            <div class="inline-form-control">
+                <label for="find-us">How did you find us?</label>
+                <select name="findus" id="find-us">
+                <option value="web-search">Web Search</option>
+                <option value="word-of-mouth">Word Of Mouth</option>
+                <option value="others">Others</option>
+            </select>
+            </div>
+        </section>
+
+        <section>
+            <h2>How should we reply?</h2>
+            <ul>
+                <li class="radio-form-control">
+                    <input type="radio" name="reply" id="call-me" value="phone" required>
+                    <label for="call-me">Call me</label>
+                </li>
+                <li class="radio-form-control">
+                    <input type="radio" name="reply" id="email-me" value="email" required>
+                    <label for="email-me">Send me an email</label>
+                </li>
+                <li class="radio-form-control">
+                    <input type="radio" name="reply" id="donot" value="don't" required>
+                    <label for="donot">don't reply</label>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <ul id="btn">
+                <li>
+                    <button type="reset">Clear</button>
+                </li>
+                <li>
+                    <button>Submit</button>
+                </li>
+            </ul>
+        </section>
+    </form>
+</body>
+
+</html>
