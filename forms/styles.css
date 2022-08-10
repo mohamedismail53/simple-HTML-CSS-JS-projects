@@ -1,5 +1,18 @@
 body {
     background-color: rgb(31, 30, 30);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-bottom: 1rem;
 }
 
 form {
@@ -8,6 +21,8 @@ form {
     background-color: white;
     padding: 1rem;
     border-radius: 6px;
+    position: relative;
+    top: 8rem;
 }
 
 label {
@@ -15,17 +30,30 @@ label {
     margin-bottom: 0.5rem;
 }
 
-input {
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
     box-sizing: border-box;
-    border-radius: 1px solid rgb(118, 117, 117);
+    background-color: rgb(243, 243, 247);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     background-color: rgb(148, 145, 150);
     color: white;
+}
+
+textarea {
+    resize: none;
 }
 
 button {

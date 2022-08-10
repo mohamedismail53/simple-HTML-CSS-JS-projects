@@ -9,31 +9,98 @@
 </head>
 
 <body>
-    <form action="/forms/" method="GET">
-        <label for="username">Your Name</label>
-        <input type="text" name="user-name" id="username">
-        <label for="useremail">Your Email</label>
-        <input type="email" name="user-email" id="useremail">
-        <label for="userage">Your Age</label>
-        <input type="number" step="1" name="user-age" id="userage">
-        <label for="userpassword">Your Password</label>
-        <input type="password" name="user-possword" id="userpassword">
-        <hr>
-        <h2>Please Select the verfication method:</h2>
-        <div class="form-inline-control">
-            <input type="radio" name="verify" id="usersms" value="sms">
-            <label for="usersms">Vai SMS</label>
-        </div>
-        <div class="form-inline-control">
-            <input type="radio" name="verify" id="userphone" value="phone">
-            <label for="userphone">Vai Phone</label>
-        </div>
-        <div class="form-inline-control">
-            <input type="radio" name="verify" id="useremail" value="email">
-            <label for="useremail">Vai Email</label>
-        </div>
-        <button>Submit</button>
-    </form>
+    <header>
+        <h1>Form Demo</h1>
+    </header>
+    <main>
+        <!-- <form action="/forms/" method="GET" novalidate> -->
+        <form action="/forms/" method="GET">
+            <section>
+                <h2>Your personal details</h2>
+
+                <ul>
+                    <li>
+                        <label for="username">Your Name</label>
+                        <input type="text" name="user-name" id="username" required>
+                    </li>
+
+                    <li>
+                        <label for="useremail">Your Email</label>
+                        <input type="email" name="user-email" id="useremail" required>
+                    </li>
+
+                    <li>
+                        <label for="userpassword">Your Password</label>
+                        <input type="password" name="user-possword" id="userpassword" required minlength="6">
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>More details</h2>
+                <ul>
+                    <li>
+                        <label for="userage">Your Age</label>
+                        <input type="number" step="1" name="user-age" id="userage" required min="18" max="100">
+                    </li>
+                    <li>
+                        <label for="birthday">Your Birthday</label>
+                        <input type="date" name="birthday-date" id="birthday" required min="1921-01-01" max="2003-01-01">
+                    </li>
+                    <li>
+                        <label for="favorite-color">Select Your Favorite Color ?</label>
+                        <select name="favoritecolor" id="favorite-color">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </section>
+            <section>
+                <h2>Please Select the verfication method ?</h2>
+                <ul>
+                    <li class="form-inline-control">
+                        <input type="radio" name="verify" id="usersms" value="sms" required>
+                        <label for="usersms">Vai SMS</label>
+                    </li>
+                    <li class="form-inline-control">
+                        <input type="radio" name="verify" id="userphone" value="phone" required>
+                        <label for="userphone">Vai Phone</label>
+                    </li>
+                    <li class="form-inline-control">
+                        <input type="radio" name="verify" id="useremail" value="email" required>
+                        <label for="useremail">Vai Email</label>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>How should contact you ?</h2>
+                <ul>
+                    <li class="form-inline-control">
+                        <input type="checkbox" name="contact" id="contact-email" value="email">
+                        <label for="contact">Contact Vai Email</label></li>
+                    <li class="form-inline-control">
+                        <input type="checkbox" name="contact" id="contact-phone" value="phone">
+                        <label for="contact">Contact Vai Phone</label>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <div class="form-inline-control">
+                    <input type="checkbox" name="terms" id="terms-agree" value="terms">
+                    <label for="terms-agree">Agree to all terms ?</label>
+                </div>
+            </section>
+            <!-- <button type="reset">Reset</button> -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 
 </html>
