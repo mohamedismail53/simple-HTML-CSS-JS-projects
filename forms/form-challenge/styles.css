@@ -30,12 +30,15 @@ ul {
 .radio-form-control {
     margin: 0.5rem;
     display: flex;
-    align-items: center;
-    width: auto;
 }
 
 .radio-form-control input {
-    width: 4%;
+    width: auto;
+}
+
+.radio-form-control label {
+    margin: 0;
+    margin-right: 0.5rem;
 }
 
 label {
