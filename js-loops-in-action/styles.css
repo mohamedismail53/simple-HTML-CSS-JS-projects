@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2A363B;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: rgb(199, 199, 61);
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+section {
+    background-color: rgba(241, 240, 193, 0.9);
+    width: 50rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2.5rem;
+    box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    color: rgb(65, 64, 64);
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+}
+
+input {
+    display: block;
+    width: 4rem;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    font-family: inherit;
+}
+
+#sum-btn,
+#highlight-section button,
+#dammy-data button,
+#statistics button {
+    font-family: inherit;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: rgb(251, 189, 33);
+    color: rgb(65, 64, 64);
+    font-size: 1rem;
+    font-weight: 600;
+    box-sizing: 1px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.sum-ans {
+    margin-top: 1rem;
+    width: auto;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(251, 189, 33);
+    color: rgb(65, 64, 64);
+    border-radius: 6px;
+}
+
+#highlight-section button {
+    margin-bottom: 0.5rem;
+}
+
+#highlight-section a {
+    text-decoration: none;
+    color: rgb(65, 64, 64);
+    font-weight: bold;
+}
+
+#dammy-data ul {
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    list-style-position: inside;
+    display: none;
+}
+
+#statistics button {
+    margin-bottom: 0.5rem;
+}
+
+span {
+    background-color: rgb(251, 189, 33);
+    color: rgb(65, 64, 64);
+    padding: 0.25rem;
+}
+
+#statistics ul {
+    font-weight: bold;
+    margin: 1rem;
+    list-style-position: inside;
+}

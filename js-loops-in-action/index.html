@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Loops in Actions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>JavaScript Loops in Action</h1>
+    </header>
+    <section>
+        <h2>JavaScript Calculator</h2>
+        <p>Determine the sum of all numbers (beginning at zero) up to a number of your choice</p>
+        <label for="entered-number">Your Number</label>
+        <input type="number" name="enterednumber" id="entered-number" min="0">
+        <button id="sum-btn">Calculate The Sum</button>
+        <div id="ans-sum"></div>
+    </section>
+    <section id="highlight-section">
+        <h2>Highlight Links</h2>
+        <button>Highlight all links in the text</button>
+        <p>
+            This is a JavaScript Learning <a href="https://www.w3schools.com/js/">Resource</a>
+        </p>
+        <p>
+            This is react.js docs <a href="https://devdocs.io/react/">link</a>
+        </p>
+        <p>
+            You can dive even deeper into JavaScript with one of our bestselling, dive-deeper JavaScript - focused
+            <a href="https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/">courses</a>
+        </p>
+    </section>
+    <section id="dammy-data">
+        <h2>Your Information</h2>
+        <button>Display User Data</button>
+        <ul></ul>
+    </section>
+    <section id="statistics">
+        <h2>Statistics</h2>
+        <p>Test your luck and find out how many dice rolls (1-6 dice) it takes you a certain number (between 1 and 6).</p>
+        <label for="stat-input">Your Target Number</label>
+        <input type="number" name="statinput" id="stat-input" min="1" max="6">
+        <button>Roll the Dice</button>
+        <ul></ul>
+        <p>it took you <span id="total-rolls">X</span> rolls to roll a <span id="target-num">Y</span></p>
+    </section>
+</body>
+
+</html>
